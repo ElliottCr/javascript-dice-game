@@ -101,7 +101,7 @@ body {
     justify-content: space-around;
 }
 
-.hold {
+.round {
     width: 70px;
     height: 70px;
 
@@ -144,6 +144,11 @@ body {
 .button:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+.button:disabled {
+    cursor: not-allowed;
+    color: #bfbfbf;
 }
 
 .button:focus-visible {
