@@ -37,6 +37,7 @@ body {
 
 #player2 {
     right: 0;
+    background-color: #bfbfbf;
 }
 
 .player-title {
@@ -90,6 +91,20 @@ body {
     justify-content: space-around;
 }
 
+.hold {
+    width: 70px;
+    height: 70px;
+
+    text-align: center;
+    font-size: 3rem;
+    line-height: 1.25rem;
+    font-weight: 200;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .button {
   background-color: #FFFFFF;
   border: 1px solid rgb(209,213,219);
@@ -123,14 +138,4 @@ body {
 
 .button:focus-visible {
   box-shadow: none;
-}
-
-.hold {
-    position: absolute;
-    bottom: 0;
-    left: 25%;
-    width: 40vh;
-    height: 40vh;
-
-    background-color: #20A4F3;
 }
