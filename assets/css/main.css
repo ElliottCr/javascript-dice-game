@@ -1,3 +1,22 @@
+@font-face {
+    font-family: "Lato";
+    src: url(../font/Lato-Regular.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url(../font/Lato-Light.ttf);
+    font-weight: 200;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato";
+}
+
 .player {
     height: 100%;
     width: 50%;
@@ -10,8 +29,58 @@
 
 #player1 {
     left: 0;
+    background-color: #f2f2f2;
 }
 
 #player2 {
     right: 0;
+}
+
+.player-title {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 200;
+    font-size: 3rem;
+}
+
+.player-score {
+    text-align: center;
+    font-weight: 200;
+    font-size: 3rem;
+}
+
+.dice {
+    width: 200px;
+    height: 200px;
+
+    background-image: url("../../images/dice5.png");
+    background-size: contain;
+
+    /*margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;*/
+
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.dice-anim {
+    transform: rotateY(0deg);
+	animation: rotateAnimation 1s linear 1;
+}
+
+@keyframes rotateAnimation {
+	from {transform: rotateY(0deg);}
+	to {transform: rotateY(359deg);}
+}
+
+.hold {
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    width: 40vh;
+    height: 40vh;
+
+    background-color: #20A4F3;
 }
