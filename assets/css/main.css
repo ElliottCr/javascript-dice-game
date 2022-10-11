@@ -20,6 +20,16 @@ body {
     font-family: "Lato";
 }
 
+#btn-new-game {
+    position: absolute;
+    margin: 0 auto;
+    top: 60px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
 .player {
     height: 100%;
     width: 50%;
