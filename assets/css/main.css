@@ -154,3 +154,15 @@ body {
 .button:focus-visible {
   box-shadow: none;
 }
+
+@media (max-width: 1400px) {
+    .button {
+        width: 150px;
+    }
+}
+
+@media (max-width: 1110px) {
+    .button {
+        width: 100px;
+    }
+}
