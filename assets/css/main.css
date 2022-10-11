@@ -81,7 +81,7 @@ body {
 
 .dice-anim {
     transform: rotateY(0deg);
-	animation: rotateAnimation 1s linear 1;
+	animation: rotateAnimation 0.5s linear 1;
 }
 
 @keyframes rotateAnimation {
